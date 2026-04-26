@@ -62,7 +62,6 @@ end
 
 -- 主访问阶段处理
 function plugin:access(conf)
-  kong.log.notice("I'm in")
   -- 获取请求头值
   local header_value = conf.request_header_value
   
